@@ -16566,7 +16566,7 @@
 	    var random_color = colors[Math.floor(Math.random() * colors.length)];
 
 	    $("head").append(
-	      "<style>.nav-link.active, .nav-link:hover, .nav-link:focus, .primary-color {color: " +
+	      "<style>.nav-link.active, .nav-link:hover, .nav-link:focus, .splash .slabtext, .primary-color {color: " +
 	        random_color +
 	        "!important}a{color: " +
 	        random_color +

@@ -11760,14 +11760,6 @@
 		"oF": 3,
 		"oS": 3
 		},
-	"/build/assets/main.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/assets/main.css.map",
-		"oF": 0
-		},
 	"/build/assets/main.js": {
 		"bF": 0,
 		"ft": 64,
@@ -11940,6 +11932,14 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"/README.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,

@@ -114,15 +114,15 @@ hr {
   // z-index: -100;
 }
 
-@keyframes hue-rotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
+// @keyframes hue-rotate {
+//   0% {
+//     filter: hue-rotate(0deg);
+//   }
+//
+//   100% {
+//     filter: hue-rotate(360deg);
+//   }
+// }
 
 .splash {
   // background-image: url("img/bg-temp.jpg");
@@ -135,14 +135,13 @@ hr {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  color: #87c339;
   .slabtext:first-of-type {
     color: $white !important;
   }
-  .slabtext:last-of-type {
-    color: rgb(185, 251, 104);
-    animation: hue-rotate 26s infinite;
-  }
+  // .slabtext:last-of-type {
+  //   color: rgb(185, 251, 104);
+  //   animation: hue-rotate 26s infinite;
+  // }
   .container {
     position: relative;
   }
