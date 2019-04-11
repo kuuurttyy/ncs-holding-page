@@ -1,0 +1,67 @@
+{% assign page_title = page.title | slugify %}
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" rel="author" href="{{ "/" | relative_url }}"><img src="/assets/img/ncs-logo.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    {% if page_title == "usage-policy" %}
+    data-target="#navbar-mobile"
+    {% else %}
+    data-target="#navbar"
+    {% endif %}
+     aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul id="navigation" class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{site.youtube_link}}" target="_blank" class="nav-link">YouTube</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/usage">Usage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{site.merch_link}}" target="_blank">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{site.spotify_link}}" target="_blank">Spotify</a>
+        </li>
+      </ul>
+    </div>
+
+
+
+{% if page_title == "usage-policy" %}
+<div class="collapse navbar-collapse" id="navbar-mobile">
+  <ul id="navigation" class="navbar-nav ml-auto scrollto">
+    <li class="nav-item">
+      <a class="nav-link" href="#faq">FAQs/ Usage Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#types">Types of Content</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="" target="_blank">I Received A Claim/Strike</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Commercial License Form</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Privacy Policy</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
+  </ul>
+</div>
+{% endif %}
+
+  </div>
+</nav>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="{{page.name | remove: ".html"}}" data-spy="scroll" data-target="#navigation" data-offset="0">
+
+    {%- include header-usage.html -%}
+
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

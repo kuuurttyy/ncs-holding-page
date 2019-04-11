@@ -1,0 +1,75 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+source: source
+destination: build
+
+title: NCS Music
+email: kurt.stubbings@aei.co.uk
+description: >- # this means to ignore newlines until "baseurl:"
+  NCS is a Record Label dedicated to giving a platform to the next generation of Artists in electronic music, representing genres from house to dubstep via trap, drum & bass, electro pop and more.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ncsmusic.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ncsounds
+github_username: jekyll
+
+logo: /assets/img/ncs-logo.svg
+
+social:
+  name: NoCopyrightSounds
+  links:
+    - https://www.youtube.com/nocopyrightsounds
+    - https://twitter.com/ncsounds
+    - https://www.facebook.com/NoCopyrightSounds/
+    - https://www.instagram.com/nocopyrightsounds/
+
+youtube_link: https://www.youtube.com/nocopyrightsounds
+twitter_link: https://twitter.com/ncsounds
+facebook_link: https://www.facebook.com/NoCopyrightSounds/
+instagram_link: https://www.instagram.com/nocopyrightsounds/
+
+# Urls for easy changing
+claim_link: https://docs.google.com/forms/d/e/1FAIpQLSc2-r-1Cq4oyrgDDAW7kV7e6AX9CFe16mnebG7ldtffXjDkuQ/viewform?usp=sf_link&authuser=0
+
+commercial_link: https://docs.google.com/forms/d/e/1FAIpQLSddq9DI7joqv3LC1BRcGn9AWA_yVZH4PbUeVFCsgsY1ej-LKA/viewform?usp=sf_link&authuser=0
+
+demo_link: http://ncs.io/demos
+
+general_link: http://ncs.io/Hello
+
+merch_link: https://ncs.fanfiber.com/
+
+spotify_link: https://open.spotify.com/user/nocopyrightsounds?si=o6exLS3YQlek429Sw1hPvg
+
+youtube_feature_url: https://www.youtube.com/embed/teYbKV65cUA
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

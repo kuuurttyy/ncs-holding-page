@@ -1,0 +1,123 @@
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <a
+              class="footer__link"
+              target="_blank"
+              href="{{ site.youtube_link }}"
+              >YouTube</a
+            >
+          </li>
+          <li class="footer__link-item">
+            <a
+              class="footer__link"
+              target="_blank"
+              href="{{ site.facebook_link }}"
+              >Facebook</a
+            >
+          </li>
+          <li class="footer__link-item">
+            <a
+              class="footer__link"
+              target="_blank"
+              href="{{ site.twitter_link }}"
+              >Twitter</a
+            >
+          </li>
+          <li class="footer__link-item">
+            <a
+              class="footer__link"
+              target="_blank"
+              href="{{ site.instagram_link }}"
+              >Instagram</a
+            >
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" target="_blank" href="{{ site.merch_link }}"
+              >Store</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-sm-6 footer-bottom">
+      <div class="col-sm-6 text-center text-md-left small">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <a class="footer__link" href="/privacy">Privacy Policy</a>
+          </li>
+          <li class="footer__link-item">
+            <a class="footer__link" href="/usage">Usage Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 text-md-right text-center">
+        <p class="small">&copy; Copyright NCS 2019</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- <footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+            </li>
+            {%- if site.email -%}
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        {%- include social.html -%}
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</footer> -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"
+></script>
+
+<!-- <script
+  src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"
+></script> -->
+
+<script src="/assets/main-min.js"></script>
+
+{% if page_title == "usage-policy" %}
+<script>
+  // Init sticky sidebar in usage policy
+  var sidebar = new StickySidebar(".sidebar-sticky", {
+    topSpacing: 140,
+    bottomSpacing: 20
+  });
+</script>
+{% endif %}

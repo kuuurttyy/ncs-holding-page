@@ -1,0 +1,271 @@
+/* ----- FONT SIZING ----- */
+$font-size-1: 12px;
+$font-size-2: 14px;
+$font-size-3: 16px;
+$font-size-4: 18px;
+$font-size-5: 20px;
+$font-size-6: 24px;
+$font-size-7: 30px;
+$font-size-8: 36px;
+$font-size-9: 48px;
+$font-size-10: 60px;
+$font-size-11: 72px;
+
+/* ----- FONT SIZING BOOTSTRAP OVERWRITING ----- */
+$font-size: 1rem;
+$font-size-lg: $font-size * 1.125;
+$font-size-sm: $font-size * 0.75;
+
+$h1-font-size: $font-size-11;
+$h2-font-size: $font-size-10;
+$h3-font-size: $font-size-9;
+$h4-font-size: $font-size-8;
+$h5-font-size: $font-size-7;
+$h6-font-size: $font-size-6;
+
+@font-face {
+  font-family: "Nexa Black";
+  src: url("/assets/fonts/nexablack-webfont.woff2") format("woff2"),
+    url("/assets/fonts/nexablack-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa Bold";
+  src: url("/assets/fonts/nexa-bold-webfont.woff2") format("woff2"),
+    url("/assets/fonts/nexa-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "Nexa Light";
+//   src: url("/assets/fonts/nexa-light-webfont.woff2") format("woff2"),
+//     url("/assets/fonts/nexa-light-webfont.woff") format("woff");
+//   font-weight: lighter;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Nexa Book";
+  src: url("/assets/fonts/nexa-book-webfont.woff2") format("woff2"),
+    url("/assets/fonts/nexa-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font__main: "Nexa Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font__bold: "Nexa Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font__header: "Nexa Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__line-height-body: 1.333;
+$font__line-height-pre: 1.6;
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-family: $font__header;
+  color: $color__text-header;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: $spacer-6;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.h1,
+h1 {
+  font-size: $font-size-11;
+}
+
+.h2,
+h2 {
+  font-size: $font-size-9;
+}
+
+.h3,
+h3 {
+  font-size: $font-size-9;
+}
+
+.h4,
+h4 {
+  font-size: $font-size-8;
+}
+
+.h5,
+h5 {
+  font-size: $font-size-7;
+}
+
+.h6,
+h6 {
+  font-size: $font-size-6;
+}
+@media screen and (max-width: 767px) {
+  .h1,
+  h1 {
+    font-size: $font-size-10;
+  }
+
+  .h2,
+  h2 {
+    font-size: $font-size-9;
+  }
+
+  .h3,
+  h3 {
+    font-size: $font-size-8;
+  }
+
+  .h4,
+  h4 {
+    font-size: $font-size-7;
+  }
+
+  .h5,
+  h5 {
+    font-size: $font-size-6;
+  }
+
+  .h6,
+  h6 {
+    font-size: $font-size-5;
+  }
+}
+@media screen and (max-width: 480px) {
+  .h1,
+  h1 {
+    font-size: $font-size-8;
+  }
+
+  .h2,
+  h2 {
+    font-size: $font-size-7;
+  }
+
+  .h3,
+  h3 {
+    font-size: $font-size-6;
+  }
+
+  .h4,
+  h4 {
+    font-size: $font-size-5;
+  }
+
+  .h5,
+  h5 {
+    font-size: $font-size-4;
+  }
+
+  .h6,
+  h6 {
+    font-size: $font-size-4;
+  }
+}
+
+strong,
+.strong {
+  font-weight: bold;
+  font-family: $font__bold;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font-size: $font-size-3;
+  font-family: $font__main;
+  color: $color__text-main;
+  background-color: $black;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  position: relative;
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-4;
+  }
+}
+
+.primary-color {
+  color: $primary;
+}
+
+.slabtexted .slabtext {
+  display: -moz-inline-box;
+  display: inline-block;
+  white-space: nowrap;
+}
+.slabtextinactive .slabtext {
+  display: inline;
+  white-space: normal;
+  font-size: 1em !important;
+  letter-spacing: inherit !important;
+  word-spacing: inherit !important;
+  *letter-spacing: normal !important;
+  *word-spacing: normal !important;
+}
+.slabtextdone .slabtext {
+  display: block;
+}
+.large-text {
+  font-size: $font-size-5;
+  font-weight: bold;
+  font-family: $font__bold;
+  span {
+    color: $white;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-6;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-7;
+  }
+}
+.medium-text {
+  font-size: $font-size-5;
+  font-weight: bold;
+  font-family: $font__bold;
+  span {
+    color: $white;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-5;
+  }
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size-6;
+  }
+}
+
+.small-text {
+  font-size: $font-size-2;
+}

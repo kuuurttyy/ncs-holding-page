@@ -1,0 +1,47 @@
+{
+  "description": "CodeKit automatically generated this file. You should customize it according to: https://github.com/bower/spec/blob/master/json.md",
+  "private": true,
+  "directory": "bower_components",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "authors": [
+    "John Doe <john@doe.com> (http://johndoe.com)"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "main": [
+    "index.html",
+    "main.js"
+  ],
+  "homepage": "https://google.com",
+  "license": "MIT",
+  "keywords": [
+    "none"
+  ],
+  "name": "my-new-project",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/foo/bar.git"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.3.1",
+    "popper.js": "^1.14.7",
+    "slabText": "^2.2.0",
+    "tilt": "^1.1.19",
+    "aos": "^2.3.4",
+    "sticky-sidebar": "^3.3.3",
+    "jquery_lazyload": "jquery.lazyload#^1.9.7",
+    "vanilla-lazyload": "^11.0.6"
+  }
+}
